@@ -23,7 +23,7 @@ A full-stack AI-powered social media post generator that creates engaging conten
 
 ## Prerequisites
 
-- Node.js (v18 or higher)
+- Node.js (v21 or higher)
 - MongoDB (local or cloud instance)
 - Google Gemini API key
 
