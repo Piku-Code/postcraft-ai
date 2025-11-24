@@ -4,9 +4,13 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+
   preview: {
-        allowedHosts: ["postcraft-ai-npg6.onrender.com"]    
-  }
+    allowedHosts: ["postcraft-ai-npg6.onrender.com"]
+    // OR simply use:
+    // allowedHosts: "all"
+  },
+
   server: {
     port: 3000,
     proxy: {
@@ -16,10 +20,10 @@ export default defineConfig({
       },
     },
   },
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
 });
-
