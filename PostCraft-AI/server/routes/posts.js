@@ -65,6 +65,12 @@ router.get('/test-api-key', async (req, res) => {
   }
 });
 
+
+// to awake backend
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
+
 // Get all posts
 router.get('/', async (req, res) => {
   try {
@@ -124,4 +130,5 @@ router.delete('/:id', async (req, res) => {
 });
 
 export default router;
+
 
