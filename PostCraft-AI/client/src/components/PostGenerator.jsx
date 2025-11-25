@@ -53,7 +53,6 @@ export function PostGenerator({ onGenerate, onCopy }) {
       onGenerate && onGenerate(response.data.count);
     } catch (error) {
       console.error('Error generating posts:', error);
-      alert('Failed to generate posts. Please try again.');
     } finally {
       setIsLoading(false);
     }
@@ -146,4 +145,5 @@ export function PostGenerator({ onGenerate, onCopy }) {
     </div>
   );
 }
+
 
