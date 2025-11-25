@@ -15,7 +15,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://postcraft-ai-1-l7li.onrender.com',
         changeOrigin: true,
       },
     },
@@ -27,3 +27,4 @@ export default defineConfig({
     },
   },
 });
+
